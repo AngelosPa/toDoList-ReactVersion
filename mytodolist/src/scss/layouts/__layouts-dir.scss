@@ -1,0 +1,29 @@
+//Import Layout files
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 2.3rem;
+}
+/* basics  */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: linear-gradient(#2f77bbc9, #ffffff67, #2f70bbc9);
+  width: 100vw;
+  height: 100vh;
+}
+.maincontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: rgba(110, 94, 94, 0.185);
+}
