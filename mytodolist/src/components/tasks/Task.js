@@ -1,18 +1,32 @@
-function newTask() {
-  console.log("IT  WORKS");
+import styles from "./Task.module.css";
 
-  return (
-    <div className="whereareyou">
-      <p>rthrt</p>
-      <div> Hey, dear</div>;
+function Task(props) {
+  const userTask = props.list.map((toDo, i) => (
+    <li key={i} className={toDo.done ? styles.opaci : null}>
+      <div> Hey, dear (ur name)</div>
       <div>
-        <p>your tasks are today:</p>
-        <p></p>
+        <p>your tasks are today:{toDo.title}</p>
       </div>
-    </div>
-  );
-}
+      <input
+        type="checkbox"
+        defaultChecked={toDo.done}
+        onChange={() => props.check(toDo.id)}
+      />
+      <input className="gms" placeholder="write notes" />
+      <i
+        onClick={() => {
+          // console.log(toDo.id);
+          props.remove(toDo.id);
+        }}
+      >
+        🗑
+      </i>
+    </li>
+  ));
 
+  return <ul>{userTask}</ul>;
+}
+export default Task;
 // function Liker() {
 //   const [clicks, setClicks] = useState(0);
 //   function increment() {
@@ -31,5 +45,4 @@ function newTask() {
 //   );
 // }
 
-export default newTask;
 //export { newTask,blabla }; //for more than one use {}

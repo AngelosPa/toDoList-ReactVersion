@@ -9,11 +9,11 @@
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: bottom;
-  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: end;
+
   flex-direction: column;
-  background: linear-gradient(#2f77bbc9, #ffffff67, #2f70bbc9);
+  background: linear-gradient(#2c11c5c9, #ffffff67, #2c11c5c9);
   width: 100vw;
   height: 100vh;
 }
@@ -21,9 +21,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+
   flex-direction: column;
   width: 100%;
-  height: auto;
+  height: 90%;
   background-color: rgba(110, 94, 94, 0.185);
+}
+.foot {
+  width: 100%;
+  height: 90%;
 }
