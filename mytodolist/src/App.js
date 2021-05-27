@@ -1,45 +1,34 @@
-import { Task, Hallo, Liker } from "./components/tasks/Task.js";
+import React, { useState } from "react";
+import newTask from "./components/tasks/Task.js";
 import "./scss/Main.scss";
+import Footer from "./components/tasks/Footer";
+import Header from "./components/tasks/Header";
+import List from "./components/tasks/List";
 
+//we import the useState for our hook and the fragment to solve the many nested divs problem (fragm.. is a wrapper who dont affect the styles)
+import { Fragment } from "react";
 //useful functions and our arrs
 function ftiaxetoSubmit(e) {
   e.preventDefault();
 }
-function newTask() {
-  console.log("IT  WORKS");
 
-  return (
-    <div className="whereareyou">
-      <p>rthrthDTESHERTHYHJrtyh</p>
-      <Hallo userName={names[1]} />
-      )(
-      <Task taskName="skata" />
-    </div>
-  );
-}
-
-const names = ["Zain", "Olga", "Nancy"];
-const listItems = names.map((name, i) => <li key={i}>{name}</li>);
+//const names = ["Zain", "Olga", "Nancy"];
+// const listItems = names.map((name, i) => <li key={i}>{name}</li>);
 function App() {
   return (
-    <div className="maincontainer">
-      <h1> to do list</h1>
-      <Liker />
-      <h2>
-        {`${new Date().getDate()}.${
-          new Date().getMonth() + 1
-        }.${new Date().getFullYear()}`}
-      </h2>
-      <aside>
-        <p>choose who you are:</p>
-        <ul>{listItems}</ul>
-      </aside>
-      <form onSubmit={ftiaxetoSubmit}>
-        <input type="text" placeholder="write your task" />
-        <input type="submit" onClick={newTask} />
-        <div></div>
-      </form>
-    </div>
+    <Fragment>
+      <div className="maincontainer">
+        <Header />
+
+        <Footer />
+
+        <form onSubmit={ftiaxetoSubmit}>
+          <input type="text" placeholder="write your task" />
+          <input type="submit" />
+          <div></div>
+        </form>
+      </div>
+    </Fragment>
   );
 }
 
