@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 const List = (props) => {
   //we initialise the state wth the empty string
   const [userInput, setUserInput] = useState("");
@@ -15,7 +16,7 @@ const List = (props) => {
       //THIS OBJECT IS OUR TODOS COMPONENTS, IF WE WANT TO ADD SOMETHING WE ADD IT HERE
       props.setList((prevState) => [
         ...prevState,
-        { id: prevState.length, title: userInput.trim(), done: false },
+        { id: uuidv4(), title: userInput.trim(), done: false },
       ]);
       // console.log(props.id);
       setUserInput("");
