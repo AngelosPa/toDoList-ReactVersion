@@ -19,7 +19,7 @@ function Task(props) {
           props.remove(toDo.id);
         }}
       >
-        🗑
+        delete 🗑
       </i>
     </li>
   ));
