@@ -13,7 +13,7 @@ This is my official portfolio Website that i created using React.
 <!-- examples of useState useEffect and useRef :
 ![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js) -->
     <br />
-    <a href="https://github.com/AngelosPa/PortfolioWebsite/tree/main/src"><strong>Explore the files »</strong></a>
+    <a href="https://github.com/AngelosPa/toDoList-ReactVersion/tree/main/mytodolist"><strong>Explore the files »</strong></a>
     <br />
     <br />
     <a href="https://angelospa.github.io/PortfolioWebsite/">View Demo</a>
