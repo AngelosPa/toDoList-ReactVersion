@@ -16,7 +16,7 @@ This is my official portfolio Website that i created using React.
     <a href="https://github.com/AngelosPa/toDoList-ReactVersion/tree/main/mytodolist"><strong>Explore the files »</strong></a>
     <br />
     <br />
-    <a href="https://angelospa.github.io/PortfolioWebsite/">View Demo</a>
+    <a href="https://angelospa.github.io/toDoList-ReactVersion/">View Demo</a>
     ·
     <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
     ·
