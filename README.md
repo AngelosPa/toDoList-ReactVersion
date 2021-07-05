@@ -1,6 +1,3 @@
-# ToDoList
-
-
 
 
 
@@ -11,10 +8,10 @@
 <p  align="center">
 
   <p align="center">
-  <strong> toDoList </strong>
-i made an other version of my to-do-list application using this time REACT.
-
-<!-- ![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js) -->
+  <strong> planets with SASS </strong>
+This is my official portfolio Website that i created using React.
+examples of useState useEffect and useRef :
+![here](https://github.com/AngelosPa/PortfolioWebsite/blob/main/src/App.js)
     <br />
     <a href="https://github.com/AngelosPa/PortfolioWebsite/tree/main/src"><strong>Explore the files »</strong></a>
     <br />
@@ -27,4 +24,4 @@ i made an other version of my to-do-list application using this time REACT.
   </p>
 </p>
 
-![check here](todoapp.png)
+![check here](portfoliowebsite.png)
